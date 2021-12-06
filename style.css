@@ -24,6 +24,7 @@ h3,p,span{
     width:20%;
     background-color: black;
     padding-top:50px;
+    overflow-y: scroll;
 }
 
 #main h2{
@@ -32,10 +33,6 @@ h3,p,span{
 
 #main *{
     text-align:center;
-}
-
-#main>div:nth-child(1)>div{
-    margin-top: 20px;
 }
 
 #main>div:nth-child(1)>div>*{
@@ -73,10 +70,6 @@ h3,p,span{
     display:block;
 }
 
-.modal *{
-    color:black;
-}
-
 .bar{
     border-radius: 5px;
     width:50px;
@@ -85,10 +78,21 @@ h3,p,span{
     background-color:red;
 }
 
-@keyframes fadein {
-    100% { opacity: 1; }
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #000;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
 
-@keyframes fadeout {
-    100% { opacity: 1; }
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #eeeeee; 
 }
